@@ -1,0 +1,20 @@
+{
+  "monorepo": true,
+  "root": "apps/nestjs-auth-service",
+  "sourceRoot": "apps/nestjs-auth-service/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nestjs-auth-service/tsconfig.app.json"
+  },
+  "projects": {
+    "nestjs-auth-service": {
+      "type": "application",
+      "root": "apps/nestjs-auth-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-auth-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-auth-service/tsconfig.app.json"
+      }
+    }
+  }
+}
